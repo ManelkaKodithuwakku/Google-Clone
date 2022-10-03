@@ -1,0 +1,8 @@
+@media all and (max-width: 665px){
+    #top-bar{
+        justify-content: center;
+    }
+    #nav-wrapper{
+        justify-content: center;
+    } 
+}
