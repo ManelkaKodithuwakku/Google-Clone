@@ -27,6 +27,7 @@ body{
     /* background-color: yellow; */
     padding: 6px;
     justify-content: flex-end;
+    white-space: nowrap;
 }   
 #top-bar>div{
     display: flex;
@@ -118,7 +119,7 @@ a:hover{
     display: flex;
     /* height: 44px; */
     max-width: 584px;
-    /* background-color: aqua; */
+    background-color: aqua;
     justify-content: center;
     border: 1px solid #dfe1e5;
     background: #fff;
@@ -127,6 +128,7 @@ a:hover{
     margin-top: 26px;
     align-items: center;
     padding: 0px 10px 0 14px;
+    width: 100%;
 }
 #search-bar:focus-within,
 #search-bar:hover{
@@ -135,12 +137,19 @@ a:hover{
     border-color: rgba(223,225,229,0);
 }
 #search-bar>input{
-    
     display: flex;
-    flex: 1 1 483px;
+    /* flex: 1 1 483px; */
+    flex: 1 1;
     outline: none;
     border: none;
-    width: 483px;
+    /* width: 483px; */
+}
+#search-form{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
 }
 #search-bar>svg{
     fill: #9aa0a6;
@@ -181,6 +190,7 @@ a:hover{
     cursor: pointer;
     align-items: center;
     user-select: none;
+    white-space: nowrap;
 }
 #middle-bar>div:hover{
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
@@ -199,13 +209,14 @@ a:hover{
     font-size: small;
     text-align: center;
     margin-top: 10px; 
+    white-space: nowrap;  
 }
 #language-bar>a{
     padding: 0 3px;
     color: #1a0dab;
     text-decoration: none;
     line-height: 28px;
-    text-align: center;  
+    text-align: center;
 }
 #language-bar>a:hover{
     cursor: pointer;
