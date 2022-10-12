@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="document.querySelector('aside').style.visibility='hidden'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google clone</title>
+    <title>Google Clone</title>
     <link rel="icon" href="https://www.google.lk/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -17,7 +17,7 @@
                 <a href="https://www.google.lk/imghp?hl=en&ogbl">Images</a>
             </div>
             <div id="img-icons">
-                <div><svg class="gb_Ue" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></div>
+                <div onclick="event.stopImmediatePropagation(); document.querySelector('aside').style.visibility='visible'" ><svg class="gb_Ue" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></div>
                 <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.lk/%3Fgws_rd%3Dssl&ec=GAZAmgQ">Sign in</a>
             </div>
         </div>
@@ -63,5 +63,145 @@
             </div>
         </div>
     </footer>
+    <aside onclick="event.stopImmediatePropagation();">
+        <div id="app-wrapper">
+            <div id="icon-set-1">
+                <div><a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">
+                        <div class="icon" style="background-position: 0px -2622px"></div>
+                        <div>Account</div>
+                    </a></div>
+                <div><a href="https://www.google.lk/webhp">
+                        <div class="icon" style="background-position: 0px -1035px"></div>
+                        <div>Search</div>
+                    </a></div>
+                <div><a href="https://maps.google.lk/maps?hl=en">
+                        <div class="icon" style="background-position: 0px -1311px"></div>
+                        <div>Maps</div>
+                    </a></div>
+                <div><a href="https://www.youtube.com/">
+                        <div class="icon" style="background-position: 0px 0px"></div>
+                        <div>YouTube</div>
+                    </a></div>
+                <div><a href="https://play.google.com/?hl=en">
+                        <div class="icon" style="background-position: 0px -759px"></div>
+                        <div>Play</div>
+                    </a></div>
+                <div><a href="https://news.google.com/">
+                        <div class="icon" style="background-position: 0px -2760px"></div>
+                        <div>News</div>
+                    </a></div>
+                <div><a href="https://mail.google.com/mail/">
+                        <div class="icon" style="background-position: 0px -1104px"></div>
+                        <div>Gmail</div>
+                    </a></div>
+                <div><a href="https://meet.google.com/?hs=197&pli=1&authuser=0">
+                        <div class="icon" style="background-position: 0px -2691px"></div>
+                        <div>Meet</div>
+                    </a></div>
+                <div><a href="https://chat.google.com/">
+                        <div class="icon" style="background-position: 0px -138px"></div>
+                        <div>Chat</div>
+                    </a></div>
+                <div><a href="https://contacts.google.com/?hl=en">
+                        <div class="icon" style="background-position: 0px -1587px"></div>
+                        <div>Contacts</div>
+                    </a></div>
+                <div><a href="https://drive.google.com/?authuser=0">
+                        <div class="icon" style="background-position: 0px -2001px"></div>
+                        <div>Drive</div>
+                    </a></div>
+                <div><a href="https://calendar.google.com/calendar">
+                        <div class="icon" style="background-position: 0px -621px"></div>
+                        <div>Calendar</div>
+                    </a></div>
+                <div><a href="https://translate.google.lk/?hl=en">
+                        <div class="icon" style="background-position: 0px -2277px"></div>
+                        <div>Translate</div>
+                    </a></div>
+                <div><a href="https://photos.google.com/?pageId=none">
+                        <div class="icon" style="background-position: 0px -414px"></div>
+                        <div>Photos</div>
+                    </a></div>
+                <div><a href="https://duo.google.com/?usp=duo_ald">
+                        <div class="icon" style="background-position: 0px -897px"></div>
+                        <div>Duo</div>
+                    </a></div>
+                <div><a href="https://www.google.lk/shopping?hl=en&source=og">
+                        <div class="icon" style="background-position: 0px -207px"></div>
+                        <div>Shopping</div>
+                    </a></div>
+            </div>
+            <span></span>
+            <div id="icon-set-2">
+                <div><a href="https://www.google.com/finance">
+                        <div class="icon" style="background-position: 0px -2208px"></div>
+                        <div>Finance</div>
+                    </a></div>
+                <div><a href="https://docs.google.com/document/?usp=docs_alc">
+                        <div class="icon" style="background-position: 0px -69px"></div>
+                        <div>Docs</div>
+                    </a></div>
+                <div><a href="https://docs.google.com/spreadsheets/?usp=sheets_alc">
+                        <div class="icon" style="background-position: 0px -966px"></div>
+                        <div>Sheets</div>
+                    </a></div>
+                <div><a href="https://docs.google.com/presentation/?usp=slides_alc">
+                        <div class="icon" style="background-position: 0px -276px"></div>
+                        <div>Slides</div>
+                    </a></div>
+                <div><a href="https://books.google.lk/?hl=en">
+                        <div class="icon" style="background-position: 0px -3036px"></div>
+                        <div>Books</div>
+                    </a></div>
+                <div><a href="https://www.blogger.com/">
+                        <div class="icon" style="background-position: 0px -1518px"></div>
+                        <div>Blogger</div>
+                    </a></div>
+                <div><a href="https://hangouts.google.com/">
+                        <div class="icon" style="background-position: 0px -2139px"></div>
+                        <div>Hangouts</div>
+                    </a></div>
+                <div><a href="https://keep.google.com/">
+                        <div class="icon" style="background-position: 0px -1173px"></div>
+                        <div>Keep</div>
+                    </a></div>
+                <div><a href="https://jamboard.google.com/?usp=jam_ald">
+                        <div class="icon" style="background-position: 0px -1794px"></div>
+                        <div>Jamboard</div>
+                    </a></div>
+                <div><a href="https://earth.google.com/web/">
+                        <div class="icon" style="background-position: 0px -2553px"></div>
+                        <div>Earth</div>
+                    </a></div>
+                <div><a href="https://www.google.lk/save">
+                        <div class="icon" style="background-position: 0px -2346px"></div>
+                        <div>Collections</div>
+                    </a></div>
+                <div><a href="https://artsandculture.google.com/?hl=en&utm_source=ogs.google.com&utm_medium=referral">
+                        <div class="icon" style="background-position: 0px -690px"></div>
+                        <div>Arts and Culture</div>
+                    </a></div>
+                <div><a href="https://ads.google.com/home/?subid=ww-ww-xs-ip-awhc-a-ogb_cons!o2">
+                        <div class="icon" style="background-position: 0px -345px"></div>
+                        <div>Google Ads</div>
+                    </a></div>
+                <div><a href="https://podcasts.google.com/">
+                        <div class="icon" style="background-position: 0px -1725px"></div>
+                        <div>Podcasts</div>
+                    </a></div>
+                <div><a href="https://www.google.com/travel/?dest_src=al">
+                        <div class="icon" style="background-position: 0px -1449px"></div>
+                        <div>Travel</div>
+                    </a></div>
+                <div><a href="https://docs.google.com/forms/?usp=forms_alc">
+                        <div class="icon" style="background-position: 0px -2415px"></div>
+                        <div>Forms</div>
+                    </a></div>
+            </div>
+            <div id="more-on-google">
+                <a href="">More on Google</a>
+            </div>
+        </div>
+    </aside>
 </body>
 </html>
